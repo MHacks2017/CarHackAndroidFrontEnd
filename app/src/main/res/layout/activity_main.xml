@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/choice_grid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:padding="4dp"
+    android:background="@color/colorPrimaryDark"
+
+    grid:alignmentMode="alignBounds"
+    grid:columnCount="2"
+    grid:rowCount="3"
+    grid:rowOrderPreserved="false"
+    grid:useDefaultMargins="true">
+
+    <ImageButton
+        android:id="@+id/light_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        grid:layout_columnWeight="1"
+        grid:layout_rowWeight="1"
+        grid:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/bulb_off"
+         />
+
+    <ImageButton
+        android:id="@+id/lock_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        grid:layout_columnWeight="1"
+        grid:layout_rowWeight="1"
+        grid:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/locked"
+        />
+
+    <ImageButton
+        android:id="@+id/tire_pressure_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        grid:layout_columnWeight="1"
+        grid:layout_rowWeight="1"
+        grid:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/tire"
+        />
+
+    <ImageButton
+        android:id="@+id/window_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        grid:layout_columnWeight="1"
+        grid:layout_rowWeight="1"
+        grid:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/car_door"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        grid:layout_columnWeight="1"
+        grid:layout_rowWeight=".25"
+        grid:layout_gravity="fill_horizontal"
+        grid:layout_columnSpan="2">
+
+        <ImageButton
+            android:id="@+id/car_info_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/car_front"
+            />
+
+        <ImageButton
+            android:id="@+id/battery_info_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/tire"
+            />
+
+        <ImageButton
+            android:id="@+id/money_info_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/car_door"
+            />
+    </LinearLayout>
+
+</android.support.v7.widget.GridLayout>
