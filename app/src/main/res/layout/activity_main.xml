@@ -26,6 +26,7 @@
         android:gravity="center"
         android:background="@color/colorPrimary"
         android:src="@drawable/bulb_off"
+        android:onClick="lightOnClick"
          />
 
     <ImageButton
@@ -38,31 +39,43 @@
         android:gravity="center"
         android:background="@color/colorPrimary"
         android:src="@drawable/locked"
+        android:onClick="lockOnClick"
         />
 
-    <ImageButton
-        android:id="@+id/tire_pressure_btn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <LinearLayout
+        android:id="@+id/extendLayoutMain"
+        android:orientation="horizontal"
         grid:layout_columnWeight="1"
         grid:layout_rowWeight="1"
         grid:layout_gravity="fill_horizontal"
-        android:gravity="center"
-        android:background="@color/colorPrimary"
-        android:src="@drawable/tire"
-        />
 
-    <ImageButton
-        android:id="@+id/window_btn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        grid:layout_columnWeight="1"
-        grid:layout_rowWeight="1"
-        grid:layout_gravity="fill_horizontal"
-        android:gravity="center"
-        android:background="@color/colorPrimary"
-        android:src="@drawable/car_door"
-        />
+        grid:layout_columnSpan="2">
+
+        <ImageButton
+            android:id="@+id/tire_pressure_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/tire"
+            android:layout_margin="4dp"
+            android:onClick="tireOnClick"
+            />
+
+        <ImageButton
+            android:id="@+id/window_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/car_door"
+            android:layout_margin="4dp"
+            />
+    </LinearLayout>
+
+
     <LinearLayout
         android:orientation="horizontal"
         grid:layout_columnWeight="1"
@@ -87,7 +100,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:background="@color/colorPrimary"
-            android:src="@drawable/tire"
+            android:src="@drawable/money"
             />
 
         <ImageButton
@@ -97,7 +110,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:background="@color/colorPrimary"
-            android:src="@drawable/car_door"
+            android:src="@drawable/battery_100"
             />
     </LinearLayout>
 

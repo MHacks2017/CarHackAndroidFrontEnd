@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CarHack</string>
+    <string name="locked_message">Car is now locked.</string>
+    <string name="unlocked_message">Car is now unlocked.</string>
+    <string name="light_on_message">Car\'s lights are now engaged.</string>
+    <string name="light_off_message">Car\s lights are now disengaged.</string>
 </resources>
