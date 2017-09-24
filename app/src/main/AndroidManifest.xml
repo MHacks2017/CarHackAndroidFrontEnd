@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PortalActivity"></activity>
+        <activity android:name=".PortalActivity" />
+        <activity android:name=".GuestActivity" />
+        <activity android:name=".CarDoors" />
+        <activity android:name=".MoneyActivity"></activity>
     </application>
 
 </manifest>

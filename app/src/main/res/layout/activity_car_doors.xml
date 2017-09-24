@@ -40,20 +40,22 @@
         android:id="@+id/car_door_fr_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/car_top"
-        android:layout_marginStart="22dp"
-        android:layout_toEndOf="@+id/car_top"
         android:onClick="car_door_fr_OnClick"
-        android:src="@drawable/car_door" />
+        android:src="@drawable/car_door"
+        android:layout_alignTop="@+id/car_top"
+        android:layout_alignParentEnd="true"
+        android:scaleX="-1"
+        android:layout_marginEnd="21dp" />
 
     <ImageButton
         android:id="@+id/car_door_rr_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/car_door_fr_btn"
-        android:layout_alignTop="@+id/car_door_rl_btn"
         android:onClick="car_door_rr_OnClick"
-        android:src="@drawable/car_door" />
+        android:src="@drawable/car_door"
+        android:layout_alignTop="@+id/car_door_rl_btn"
+        android:layout_alignStart="@+id/car_door_fr_btn"
+        android:scaleX="-1"/>
 
     <TextView
         android:id="@+id/car_door_fl_caption"

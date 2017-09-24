@@ -52,16 +52,15 @@
         grid:layout_columnSpan="2">
 
         <ImageButton
-            android:id="@+id/tire_pressure_btn"
+            android:id="@+id/mic_btn"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:background="@color/colorPrimary"
-            android:src="@drawable/tire"
             android:layout_margin="4dp"
-            android:onClick="tireOnClick"
-            />
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="micOnClick"
+            android:src="@drawable/mic" />
 
         <ImageButton
             android:id="@+id/window_btn"
@@ -101,6 +100,7 @@
             android:layout_weight="1"
             android:background="@color/colorPrimary"
             android:gravity="center"
+            android:onClick="moneyOnClick"
             android:src="@drawable/money" />
 
         <ImageButton

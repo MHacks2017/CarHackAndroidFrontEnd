@@ -6,4 +6,5 @@
     <string name="light_off_message">Car\s lights are now disengaged.</string>
     <string name="welcome">WELCOME</string>
     <string name="welcome_message">Please scan your BitCard</string>
+    <string name="destination_prompt">Where would you like to go today?</string>
 </resources>

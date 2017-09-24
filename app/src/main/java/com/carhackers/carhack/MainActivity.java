@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         locked = !locked;
     }
 
-    public void tireOnClick(View v){
+    public void micOnClick(View v){
 
 
     }
