@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#808080</color>
     <color name="colorAccent">#1a75ff</color>
     <color name="colorCompliment">#99ffbb</color>
+    <color name="colorBackgroundLite">#c0c0c0</color>
 </resources>

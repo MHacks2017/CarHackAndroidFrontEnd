@@ -57,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
         lightOn = !lightOn;
     }
 
+    public void moneyOnClick(View v){
+        startActivity(new Intent(this, MoneyActivity.class));
+    }
     public void lockOnClick(View v){
         ImageButton lock = (ImageButton) findViewById(R.id.lock_btn);
         //insert api check here to see if car locked or not to update locked instance field
