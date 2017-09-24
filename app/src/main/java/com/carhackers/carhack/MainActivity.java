@@ -1,8 +1,10 @@
 package com.carhackers.carhack;
 
+import android.content.Intent;
 import android.graphics.drawable.Icon;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
@@ -74,22 +76,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tireOnClick(View v){
-        LinearLayout extendedView = (LinearLayout) v.getParent();
-        View[] componentsToSave = new View[extendedView.getChildCount()];
-        for(int i = 0; i < extendedView.getChildCount(); ++i){
-            ImageButton button = (ImageButton) extendedView.getChildAt((i));
-            componentsToSave[i] = button;
-            button.setVisibility((View.GONE));
-        }
-        //use a relative layout to position tires and tire info
-        RelativeLayout newContainer = new RelativeLayout(this);
-        extendedView.addView(newContainer);
 
-        //img of car
-//        ImageView carTopology = new ImageView(this);
-//        carTopology.setImageResource(R.drawable.car_topology);
-//        LinearLayout.LayoutParams carLayout = carTopology.getLayoutParams();
-//        carTopology.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, .5f));
-//        newContainer.addView(carTopology);
+
     }
+
+    public void doorOnClick(View v){
+        startActivity(new Intent(this, CarDoors.class));
+    }
+
 }

@@ -71,6 +71,7 @@
             android:gravity="center"
             android:background="@color/colorPrimary"
             android:src="@drawable/car_door"
+            android:onClick="doorOnClick"
             android:layout_margin="4dp"
             />
     </LinearLayout>
@@ -112,6 +113,7 @@
             android:background="@color/colorPrimary"
             android:src="@drawable/battery_100"
             />
+
     </LinearLayout>
 
 </android.support.v7.widget.GridLayout>

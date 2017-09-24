@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCompliment"
+    tools:context="com.carhackers.carhack.CarDoors">
+
+
+    <ImageView
+        android:id="@+id/car_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car_top"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/car_door_fl_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/car_top"
+        android:layout_marginStart="21dp"
+        android:onClick="car_door_fl_OnClick"
+        android:src="@drawable/car_door" />
+
+    <ImageButton
+        android:id="@+id/car_door_rl_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/car_top"
+        android:layout_alignStart="@+id/car_door_fl_btn"
+        android:layout_marginBottom="77dp"
+        android:onClick="car_door_rl_OnClick"
+        android:src="@drawable/car_door" />
+
+    <ImageButton
+        android:id="@+id/car_door_fr_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/car_top"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/car_top"
+        android:onClick="car_door_fr_OnClick"
+        android:src="@drawable/car_door" />
+
+    <ImageButton
+        android:id="@+id/car_door_rr_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/car_door_fr_btn"
+        android:layout_alignTop="@+id/car_door_rl_btn"
+        android:onClick="car_door_rr_OnClick"
+        android:src="@drawable/car_door" />
+
+    <TextView
+        android:id="@+id/car_door_fl_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/car_door_fl_btn"
+        android:layout_alignStart="@+id/car_door_fl_btn"
+        android:text="Open" />
+
+    <TextView
+        android:id="@+id/car_door_fr_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/car_door_fr_btn"
+        android:layout_alignStart="@+id/car_door_fr_btn"
+        android:text="Open" />
+
+    <TextView
+        android:id="@+id/car_door_rl_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/car_door_rl_btn"
+        android:layout_centerVertical="true"
+        android:text="Open" />
+
+    <TextView
+        android:id="@+id/car_door_rr_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/car_door_rl_caption"
+        android:layout_alignStart="@+id/car_door_rr_btn"
+        android:text="Open" />
+</RelativeLayout>
