@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        new TeslaAsynctask().execute();
+
         ImageButton bulb = (ImageButton) findViewById(R.id.light_btn);
         //change to get from api check if light off, replace false with code that gets this
         if(lightOn = false){
