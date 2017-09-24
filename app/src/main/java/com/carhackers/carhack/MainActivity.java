@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             bulb.setImageResource(R.drawable.bulb_on);
-            Toast.makeText(this, R.string.unlocked_message, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.light_on_message, Toast.LENGTH_SHORT).show();
         }
         //insert code here for changing light
         {}
@@ -65,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
         //insert api check here to see if car locked or not to update locked instance field
         if(locked){
             lock.setImageResource(R.drawable.unlocked);
-            Toast.makeText(this, R.string.locked_message, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.unlocked_message, Toast.LENGTH_SHORT).show();
 
         }
         else{
-            lock.setImageResource(R.drawable.locked);
-            Toast.makeText(this, R.string.unlocked_message, Toast.LENGTH_SHORT).show();
+            lock.setImageResource(R.drawable.unlocked);
+            Toast.makeText(this, R.string.locked_message, Toast.LENGTH_SHORT).show();
         }
 
         //insert code here for changing lock

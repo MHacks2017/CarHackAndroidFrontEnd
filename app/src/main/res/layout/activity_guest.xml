@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackgroundLite"
+    android:orientation="vertical"
     tools:context="com.carhackers.carhack.GuestActivity">
+
 
 
 
@@ -16,15 +18,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="46dp"
-        android:layout_marginBottom="40dp"
         android:text="@string/destination_prompt" />
 
-    <RadioButton
-        android:id="@+id/town_hall"
+    <RadioGroup
+        android:id="@+id/radio_grp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="RadioButton" />
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/capitol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Capitol Square" />
+
+        <RadioButton
+            android:id="@+id/grocery_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grocery Store" />
+
+        <RadioButton
+            android:id="@+id/terrace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Terrace" />
+
+        <RadioButton
+            android:id="@+id/bascom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bascom Hall" />
+
+        <Button
+            android:id="@+id/loc_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="continueOnClick"
+            android:text="Continue" />
+    </RadioGroup>
+
+
 
 
 </LinearLayout>

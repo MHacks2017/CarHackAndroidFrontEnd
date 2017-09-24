@@ -10,16 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+          
+        </activity>
+        <activity android:name=".PortalActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PortalActivity" />
+
         <activity android:name=".GuestActivity" />
         <activity android:name=".CarDoors" />
-        <activity android:name=".MoneyActivity"></activity>
+        <activity android:name=".MoneyActivity" />
+        <activity android:name=".GuestPayment"></activity>
     </application>
 
 </manifest>
