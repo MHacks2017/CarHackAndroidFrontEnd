@@ -38,7 +38,7 @@ public class CarDoors extends AppCompatActivity {
     private void changeDoorState(int doorID, int doorIDRes){
 
         //insert into conditional to check if door open
-        if(true){
+        if(((TextView) findViewById(doorIDRes)).getText().equals("Open")){
             //insert code to open front left door
             TextView caption = (TextView) findViewById(doorIDRes);
             caption.setText("Closed");
@@ -49,5 +49,5 @@ public class CarDoors extends AppCompatActivity {
             caption.setText("Open");
         }
     }
-    
+
 }
