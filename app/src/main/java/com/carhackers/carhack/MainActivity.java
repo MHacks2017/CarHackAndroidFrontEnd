@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void micOnClick(View v){
 
-        startActivity(new Intent(this, CarDoors.class));
+        startActivity(new Intent(this, SpeechActivity.class));
     }
 
     public void doorOnClick(View v){
