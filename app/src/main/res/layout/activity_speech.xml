@@ -27,7 +27,8 @@
         android:id="@+id/groupMode"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/button1">
+        android:layout_below="@+id/button1"
+        android:visibility="invisible">
 
         <RadioButton
             android:layout_width="wrap_content"
